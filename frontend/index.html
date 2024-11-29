@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="appleid-signin-client-id" content="%VITE_APPLE_CLIENT_ID%" />
+    <meta name="appleid-signin-scope" content="name email" />
+    <meta name="appleid-signin-redirect-uri" content="%API_URL%/api/auth/apple/callback" />
+    <meta name="appleid-signin-state" content="origin:web" />
+    <meta name="appleid-signin-use-popup" content="true" />
+    <title>Authentication System</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

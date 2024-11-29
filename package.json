@@ -1,0 +1,21 @@
+{
+  "name": "freenoai",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "concurrently \"npm run build -w backend\" \"npm run build -w frontend\"",
+    "lint": "concurrently \"npm run lint -w backend\" \"npm run lint -w frontend\"",
+    "db:init": "npm run db:init -w backend",
+    "db:generate": "npm run db:generate -w backend",
+    "db:push": "npm run db:push -w backend",
+    "db:studio": "npm run db:studio -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
